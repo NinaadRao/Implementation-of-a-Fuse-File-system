@@ -46,5 +46,5 @@ First create the file system. To create the file system run:
 After creating the file system, run the pSysCall.c function.
 To run it:
 1. gcc -D_FILE_OFFSET_BITS=64 pSysCall.c -o tree `pkg-config fuse --cflags --libs`
-2. ./tree -f <mount point(location of a directory>
+2. ./tree -f <mount point(location of a directory)>
 3. now open the directory and run the commands you would like to see.
