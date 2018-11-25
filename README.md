@@ -48,3 +48,6 @@ To run it:
 1. gcc -D_FILE_OFFSET_BITS=64 pSysCall.c -o tree `pkg-config fuse --cflags --libs`
 2. ./tree -f <mount point(location of a directory)>
 3. now open the directory and run the commands you would like to see.
+ 
+To unmount the file system, run the command:
+sudo umount <mount point(location of a directory)>
