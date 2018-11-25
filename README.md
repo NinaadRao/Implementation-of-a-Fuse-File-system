@@ -36,3 +36,15 @@ typedef struct direntry<br/>
 } direntry;<br/>
 
 The persistence was implemented by storing the information of the file onto a binary file and this file was read as an nary tree.<br/>
+
+To run the repository,
+Clone the directory.
+First create the file system. To create the file system run:
+1. gcc pFileCreate.c -o creating.out
+2. ./creating.out
+
+After creating the file system, run the pSysCall.c function.
+To run it:
+1. gcc -D_FILE_OFFSET_BITS=64 pSysCall.c -o tree `pkg-config fuse --cflags --libs`
+2. ./tree -f <mount point(location of a directory>
+3. now open the directory and run the commands you would like to see.
