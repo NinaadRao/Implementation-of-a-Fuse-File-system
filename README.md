@@ -35,7 +35,7 @@ typedef struct direntry<br/>
     char filename[28];<br/>
 } direntry;<br/>
 
-The persistence was implemented by storing the information of the file onto a binary file and this file was read as an nary tree.<br/>
+The persistence was implemented by storing the information of the file onto a binary file and this file was read as an nary tree. The binary file is called NNNFS.<br/>
 
 To run the repository,
 Clone the directory.
