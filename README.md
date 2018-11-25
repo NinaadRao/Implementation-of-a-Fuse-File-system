@@ -12,9 +12,9 @@ The system calls implemented include:
 8. rmdir
 9. unlink
 
-The inode structure used is:
-typedef struct inode
-{
+The inode structure used is:<br/>
+typedef struct inode<br/>
+{<br/>
     mode_t mode;<br/>
     int size;<br/>
     uid_t uid;<br/>
@@ -25,12 +25,12 @@ typedef struct inode
     short int hard_link_count;<br/>
     short int block_count;<br/>
     int data_block_pointers[5];<br/>
-
+<br/>
 } inode;<br/>
 
-The dirent structure:
-typedef struct direntry
-{
+The dirent structure:<br/>
+typedef struct direntry<br/>
+{<br/>
     int inode_num;<br/>
     char filename[28];<br/>
 } direntry;<br/>
