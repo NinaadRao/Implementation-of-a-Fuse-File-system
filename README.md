@@ -15,24 +15,24 @@ The system calls implemented include:
 The inode structure used is:
 typedef struct inode
 {
-    mode_t mode;
-    int size;
-    uid_t uid;
-    gid_t gid;
-    time_t last_access_time;
-    time_t last_modified_time;
-    time_t create_time;
-    short int hard_link_count;
-    short int block_count;
-    int data_block_pointers[5];
+    mode_t mode;<br/>
+    int size;<br/>
+    uid_t uid;<br/>
+    gid_t gid;<br/>
+    time_t last_access_time;<br/>
+    time_t last_modified_time;<br/>
+    time_t create_time;<br/>
+    short int hard_link_count;<br/>
+    short int block_count;<br/>
+    int data_block_pointers[5];<br/>
 
-} inode;
+} inode;<br/>
 
 The dirent structure:
 typedef struct direntry
 {
-    int inode_num;
-    char filename[28];
-} direntry;
+    int inode_num;<br/>
+    char filename[28];<br/>
+} direntry;<br/>
 
-The persistence was implemented by storing the information of the file onto a binary file and this file was read as an nary tree.
+The persistence was implemented by storing the information of the file onto a binary file and this file was read as an nary tree.<br/>
